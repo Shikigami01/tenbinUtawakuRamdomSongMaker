@@ -19,7 +19,7 @@ const selectSongRandom = (buttonName, textName, jsonName) => {
   }
 };
 
-selectSongRandom('js-slotButton0', 'js-resultSongName1', jsonAll);
+selectSongRandom('js-slotButton0', 'js-resultSongName0', jsonAll);
 selectSongRandom('js-slotButton1', 'js-resultSongName1', json1);
 selectSongRandom('js-slotButton2', 'js-resultSongName2', json2);
 selectSongRandom('js-slotButton3', 'js-resultSongName3', json3);
