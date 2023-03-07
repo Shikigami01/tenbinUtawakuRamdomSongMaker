@@ -8,13 +8,13 @@ const jsonAll = [];
 jsonAll.push(...json1, ...json2, ...json3, ...json4);
 
 const selectSongRandom = (buttonName, textName, jsonName) => {
-  const slotButton1 = document.getElementById(buttonName);
-  const songResult1 = document.getElementById(textName);
+  const slotButton = document.getElementById(buttonName);
+  const songResult = document.getElementById(textName);
 
-  if (slotButton1 != null) {
-    slotButton1.addEventListener('click', () => {
+  if (slotButton != null) {
+    slotButton.addEventListener('click', () => {
       const result = jsonName[Math.floor(Math.random(new Date()) * jsonName.length)];
-      songResult1.innerText = result;
+      songResult.innerText = result;
     });
   }
 };
