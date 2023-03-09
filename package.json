@@ -4,11 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "stylelint-check": "stylelint-config-prettier-check",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "eslint": "eslint src --ext .js --cache",
+    "stylelint": "stylelint src/**/*.css",
+    "prettier": "prettier --write src/**/*"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.54.1",
@@ -29,8 +31,8 @@
   },
   "dependencies": {},
   "lint-staged": {
-    "*.js": "eslint --cache --fix",
-    "*.css": "stylelint --fix",
-    "*.{js,css,md}": "prettier --write"
+    "*.js": "yarn eslint",
+    "*.css": "yarn stylelint",
+    "*.{js,css,md}": "yarn prettier"
   }
 }
