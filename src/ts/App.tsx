@@ -4,7 +4,6 @@ import songList1 from '../assets/json/songList1.json';
 import songList2 from '../assets/json/songList2.json';
 import songList3 from '../assets/json/songList3.json';
 import songList4 from '../assets/json/songList4.json';
-// import githubLogo from '/images/icon_github.svg';
 
 const jsonAll: string[] = [];
 jsonAll.push(...songList1, ...songList2, ...songList3, ...songList4);
@@ -45,7 +44,7 @@ const App: React.FunctionComponent = () => {
               className="w-full h-auto"
             >
               <img
-                src="/images/icon_github.svg"
+                src="./images/icon_github.svg"
                 alt="このプロジェクトのgithub"
                 className="block w-full h-auto"
               />
@@ -54,7 +53,7 @@ const App: React.FunctionComponent = () => {
           <li className="w-8 h-auto ml-2">
             <a href="https://twitter.com/HouraijiN" className="w-full h-auto">
               <img
-                src="/images/icon_twitter.svg"
+                src="./images/icon_twitter.svg"
                 alt="敷き紙のtwitter"
                 className="block w-full h-auto"
               />
