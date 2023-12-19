@@ -1,38 +1,51 @@
 {
-  "name": "tenbinkaraokeramdommaker",
+  "name": "tenbinutawakuramdomsongmaker",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "prepare": "husky install",
-    "eslint": "eslint src --ext .js --cache",
-    "stylelint": "stylelint src/**/*.css",
-    "prettier": "prettier --write src/**/*"
+    "cm": "git-cz"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "dependencies": {
+    "@types/node": "^20.10.5",
+    "autoprefixer": "^10.4.16",
+    "eslint-plugin-unused-imports": "^3.0.0",
+    "git-cz": "^4.9.0",
+    "postcss": "^8.4.32",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.3.6",
+    "the-new-css-reset": "^1.11.2"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.54.1",
-    "@typescript-eslint/parser": "^5.54.1",
-    "autoprefixer": "^10.4.13",
-    "eslint": "^8.35.0",
-    "eslint-config-prettier": "^8.7.0",
-    "husky": ">=6",
-    "lint-staged": ">=10",
-    "postcss": "^8.4.21",
-    "prettier": "^2.8.4",
-    "stylelint": "^15.2.0",
-    "stylelint-config-standard": "^30.0.1",
-    "stylelint-config-standard-scss": "^7.0.1",
-    "stylelint-scss": "^4.4.0",
-    "tailwindcss": "^3.2.4",
-    "vite": "^4.0.0"
-  },
-  "dependencies": {},
-  "lint-staged": {
-    "*.js": "yarn eslint",
-    "*.css": "yarn stylelint",
-    "*.{js,css,md}": "yarn prettier"
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-standard-with-typescript": "^43.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.1.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.8"
   }
 }
