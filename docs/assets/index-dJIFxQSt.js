@@ -9328,7 +9328,7 @@ const Bd = () =>
                   href: 'https://github.com/Shikigami01/tenbinUtawakuRamdomSongMaker',
                   className: 'w-full h-auto',
                   children: L.jsx('img', {
-                    src: '/images/icon_github.svg',
+                    src: './images/icon_github.svg',
                     alt: 'このプロジェクトのgithub',
                     className: 'block w-full h-auto',
                   }),
@@ -9340,7 +9340,7 @@ const Bd = () =>
                   href: 'https://twitter.com/HouraijiN',
                   className: 'w-full h-auto',
                   children: L.jsx('img', {
-                    src: '/images/icon_twitter.svg',
+                    src: './images/icon_twitter.svg',
                     alt: '敷き紙のtwitter',
                     className: 'block w-full h-auto',
                   }),
