@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     open: true,
   },
-  base: 'tenbinUtawakuRamdomSongMaker',
+  base: './',
   plugins: [react()],
   build: {
     outDir: 'docs',
